@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dialogs   -->
+
+    <style name="full_screen_dialog" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

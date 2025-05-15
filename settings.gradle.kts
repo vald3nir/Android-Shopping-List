@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -9,6 +10,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven { url = uri("https://www.jitpack.io") }
     }
 }
 dependencyResolutionManagement {
@@ -21,3 +23,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "Shopping List"
 include(":app")
+// Toolkit Libs
+include(":toolkit:networking")
+include(":toolkit:helpers")
+include(":toolkit:compose")
+include(":toolkit:services")
+include(":toolkit:firebase")
+include(":toolkit:autentication")

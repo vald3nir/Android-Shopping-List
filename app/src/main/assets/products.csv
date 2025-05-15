@@ -1,0 +1,526 @@
+name,category
+Achocolatado em Pó,Bebidas
+Carne Bovina,Açougue e Peixaria
+Carne Suína,Açougue e Peixaria
+Frango,Açougue e Peixaria
+Hambúrguer,Açougue e Peixaria
+Linguiça,Açougue e Peixaria
+Ovos,Açougue e Peixaria
+Peixe,Açougue e Peixaria
+Salsicha,Açougue e Peixaria
+Cachaça,Bebidas
+Cerveja,Bebidas
+Champagne,Bebidas
+Conhaque,Bebidas
+Espumante,Bebidas
+Gin,Bebidas
+Licor,Bebidas
+Rum,Bebidas
+Sake,Bebidas
+Tequila,Bebidas
+Vinho,Bebidas
+Vodka,Bebidas
+Whisky,Bebidas
+Água Mineral,Bebidas
+Biscoito Água e Sal,Padaria
+Biscoito Cream Cracker,Padaria
+Biscoito de Chocolate,Padaria
+Biscoito de Leite,Padaria
+Biscoito de Chocolate Branco,Padaria
+Biscoito de Coco,Padaria
+Biscoito de Morango,Padaria
+Biscoito Maizena,Padaria
+Biscoito Polvilho,Padaria
+Biscoito Recheado,Padaria
+Biscoito Wafer,Padaria
+Café,Bebidas
+Café em Cápsula,Bebidas
+Café Solúvel,Bebidas
+Acém,Açougue e Peixaria
+Alcatra,Açougue e Peixaria
+Contrafilé,Açougue e Peixaria
+Costela,Açougue e Peixaria
+Coxão Duro,Açougue e Peixaria
+Coxão Mole,Açougue e Peixaria
+Filé Mignon,Açougue e Peixaria
+Linguiça Calabresa,Açougue e Peixaria
+Linguiça de Gado,Açougue e Peixaria
+Linguiça de Cabra,Açougue e Peixaria
+Linguiça de Carneiro,Açougue e Peixaria
+Linguiça de Frango,Açougue e Peixaria
+Linguiça de Peru,Açougue e Peixaria
+Linguiça de Porco,Açougue e Peixaria
+Linguiça Toscana,Açougue e Peixaria
+Maminha,Açougue e Peixaria
+Paleta,Açougue e Peixaria
+Patinho,Açougue e Peixaria
+Peito de Frango,Açougue e Peixaria
+Picanha,Açougue e Peixaria
+Barra de Chocolate,Mercearia
+Caixa de Chocolate,Mercearia
+Doce de Leite,Mercearia
+Adaptador,Eletrônicos
+Extensão,Eletrônicos
+Fio Elétrico,Eletrônicos
+Fita Adesiva,Eletrônicos
+Fita Isolante,Eletrônicos
+Interruptor,Eletrônicos
+Lâmpada,Eletrônicos
+Pilha AA,Eletrônicos
+Pilha AAA,Eletrônicos
+Tomada,Eletrônicos
+Apontador,Escritório
+Borracha,Escritório
+Caderno,Escritório
+Caneta,Escritório
+Cartolina,Escritório
+Clips,Escritório
+Cola,Escritório
+Cola Bastão,Escritório
+Corretivo,Escritório
+Envelope,Escritório
+EVA,Escritório
+Fita Adesiva,Escritório
+Fita Crepe,Escritório
+Fita de Algodão,Escritório
+Fita de Borracha,Escritório
+Fita de Cetim,Escritório
+Fita de Embalagem,Escritório
+Fita de Juta,Escritório
+Fita de Lã,Escritório
+Fita de Linho,Escritório
+Fita de Nylon,Escritório
+Fita de Poliéster,Escritório
+Fita de PVC,Escritório
+Fita de Seda,Escritório
+Fita de Seda Sintética,Escritório
+Fita de Veludo,Escritório
+Fita Dupla Face,Escritório
+Fita Durex,Escritório
+Fita Isolante,Escritório
+Fita Magnética,Escritório
+Fita Métrica,Escritório
+Folha A4,Escritório
+Grampeador,Escritório
+Grampo,Escritório
+Lápis,Escritório
+Marcador,Escritório
+Pincel,Escritório
+Régua,Escritório
+Tesoura,Escritório
+Tinta Guache,Escritório
+Mortadela,Açougue e Peixaria
+Presunto,Açougue e Peixaria
+Amaranto,Mercearia
+Amendoim,Mercearia
+Arroz,Mercearia
+Aveia,Mercearia
+Cânhamo,Mercearia
+Centeio,Mercearia
+Cevada,Mercearia
+Cevadinha,Mercearia
+Chia,Mercearia
+Ervilha,Mercearia
+Farelo de Amaranto,Mercearia
+Farelo de Amaranto Integral,Mercearia
+Farelo de Amaranto Integral Parboilizado,Mercearia
+Farelo de Amaranto Parboilizado,Mercearia
+Farelo de Amendoim,Mercearia
+Farelo de Amendoim Integral,Mercearia
+Farelo de Amendoim Integral Parboilizado,Mercearia
+Farelo de Amendoim Parboilizado,Mercearia
+Farelo de Arroz,Mercearia
+Farelo de Arroz Integral,Mercearia
+Farelo de Arroz Integral Parboilizado,Mercearia
+Farelo de Arroz Parboilizado,Mercearia
+Farelo de Aveia,Mercearia
+Farelo de Aveia Integral,Mercearia
+Farelo de Aveia Integral Parboilizada,Mercearia
+Farelo de Aveia Parboilizada,Mercearia
+Farelo de Centeio,Mercearia
+Farelo de Centeio Integral,Mercearia
+Farelo de Centeio Integral Parboilizado,Mercearia
+Farelo de Centeio Parboilizado,Mercearia
+Farelo de Cevada,Mercearia
+Farelo de Cevada Integral,Mercearia
+Farelo de Cevada Integral Parboilizada,Mercearia
+Farelo de Cevada Parboilizada,Mercearia
+Farelo de Cevadinha,Mercearia
+Farelo de Cevadinha Integral,Mercearia
+Farelo de Cevadinha Integral Parboilizada,Mercearia
+Farelo de Cevadinha Parboilizada,Mercearia
+Farelo de Chia,Mercearia
+Farelo de Chia Integral,Mercearia
+Farelo de Chia Integral Parboilizada,Mercearia
+Farelo de Chia Parboilizada,Mercearia
+Farelo de Ervilha,Mercearia
+Farelo de Ervilha Integral,Mercearia
+Farelo de Ervilha Integral Parboilizada,Mercearia
+Farelo de Ervilha Parboilizada,Mercearia
+Farelo de Fava,Mercearia
+Farelo de Fava Integral,Mercearia
+Farelo de Fava Integral Parboilizada,Mercearia
+Farelo de Fava Parboilizada,Mercearia
+Farelo de Gergelim,Mercearia
+Farelo de Gergelim Integral,Mercearia
+Farelo de Gergelim Integral Parboilizado,Mercearia
+Farelo de Gergelim Parboilizado,Mercearia
+Farelo de Lentilha,Mercearia
+Farelo de Lentilha Integral,Mercearia
+Farelo de Lentilha Integral Parboilizada,Mercearia
+Farelo de Lentilha Parboilizada,Mercearia
+Farelo de Linhaça,Mercearia
+Farelo de Linhaça Integral,Mercearia
+Farelo de Linhaça Integral Parboilizada,Mercearia
+Farelo de Linhaça Parboilizada,Mercearia
+Farelo de Milho,Mercearia
+Farelo de Milho Integral,Mercearia
+Farelo de Milho Integral Parboilizado,Mercearia
+Farelo de Milho Parboilizado,Mercearia
+Farelo de Painço,Mercearia
+Farelo de Painço Integral,Mercearia
+Farelo de Painço Integral Parboilizado,Mercearia
+Farelo de Painço Parboilizado,Mercearia
+Farelo de Quinoa,Mercearia
+Farelo de Quinoa Integral,Mercearia
+Farelo de Quinoa Integral Parboilizada,Mercearia
+Farelo de Quinoa Parboilizada,Mercearia
+Farelo de Soja,Mercearia
+Farelo de Soja Integral,Mercearia
+Farelo de Soja Integral Parboilizada,Mercearia
+Farelo de Soja Parboilizada,Mercearia
+Farelo de Sorgo,Mercearia
+Farelo de Sorgo Integral,Mercearia
+Farelo de Sorgo Integral Parboilizado,Mercearia
+Farelo de Sorgo Parboilizado,Mercearia
+Farelo de Trigo,Mercearia
+Farelo de Trigo Integral,Mercearia
+Farelo de Trigo Integral Parboilizado,Mercearia
+Farelo de Trigo Parboilizado,Mercearia
+Farelo de Triticale,Mercearia
+Farelo de Triticale Integral,Mercearia
+Farelo de Triticale Integral Parboilizado,Mercearia
+Farelo de Triticale Parboilizado,Mercearia
+Fava,Mercearia
+Feijão,Mercearia
+Feijão,Mercearia
+Gergelim,Mercearia
+Grão-de-Bico,Mercearia
+Lentilha,Mercearia
+Linhaça,Mercearia
+Painço,Mercearia
+Quinoa,Mercearia
+Soja,Mercearia
+Sorgo,Mercearia
+Trigo,Mercearia
+Triticale,Mercearia
+Absorvente Higiênico,Higiene e Beleza
+Água Micelar,Higiene e Beleza
+Algodão,Higiene e Beleza
+Batom Hidratante,Higiene e Beleza
+Cera para Depilação,Higiene e Beleza
+Condicionador,Higiene e Beleza
+Condicionador Anticaspa,Higiene e Beleza
+Cotonete,Higiene e Beleza
+Cotonetes para Bebê,Higiene e Beleza
+Creme de Barbear,Higiene e Beleza
+Creme Dental,Higiene e Beleza
+Creme Hidratante,Higiene e Beleza
+Creme para as Mãos,Higiene e Beleza
+Creme para Assaduras,Higiene e Beleza
+Creme para Assaduras Infantil,Higiene e Beleza
+Creme para Barba,Higiene e Beleza
+Creme para Bebê,Higiene e Beleza
+Creme para Cutículas,Higiene e Beleza
+Creme para Dermatite,Higiene e Beleza
+Creme para Joelhos e Cotovelos,Higiene e Beleza
+Creme para Mãos Ressecadas,Higiene e Beleza
+Creme para Olheiras,Higiene e Beleza
+Creme para os Pés,Higiene e Beleza
+Creme para Pele Mista,Higiene e Beleza
+Creme para Pele Oleosa,Higiene e Beleza
+Creme para Pele Seca,Higiene e Beleza
+Creme para Pentear,Higiene e Beleza
+Creme para Pés Ressecados,Higiene e Beleza
+Creme para Rugas,Higiene e Beleza
+Demaquilante,Higiene e Beleza
+Desodorante Aerosol,Higiene e Beleza
+Desodorante Corporal,Higiene e Beleza
+Desodorante Roll-On,Higiene e Beleza
+Desodorante Sem Perfume,Higiene e Beleza
+Enxaguante Bucal,Higiene e Beleza
+Escova de Cabelo,Higiene e Beleza
+Escova de Dentes,Higiene e Beleza
+Escova de Dentes Elétrica,Higiene e Beleza
+Escova de Dentes Infantil,Higiene e Beleza
+Esponja de Banho,Higiene e Beleza
+Espuma de Barbear,Higiene e Beleza
+Fio Dental,Higiene e Beleza
+Gel de Limpeza Facial,Higiene e Beleza
+Gel para Barba,Higiene e Beleza
+Gel para Cabelo,Higiene e Beleza
+Lâmina de Barbear,Higiene e Beleza
+Lâmina de Barbear,Higiene e Beleza
+Lenço Umedecido,Higiene e Beleza
+Lenço Umedecido para Bebê,Higiene e Beleza
+Loção de Limpeza,Higiene e Beleza
+Loção Hidratante para Bebê,Higiene e Beleza
+Loção para o Corpo,Higiene e Beleza
+Loção para o Rosto,Higiene e Beleza
+Loção Pós-Barba,Higiene e Beleza
+Loção Pós-Depilação,Higiene e Beleza
+Máscara Facial,Higiene e Beleza
+Óleo Corporal,Higiene e Beleza
+Óleo para Barba,Higiene e Beleza
+Óleo para Bebê,Higiene e Beleza
+Óleo para Cutículas,Higiene e Beleza
+Papel Higiênico,Higiene e Beleza
+Papel Higiênico,Higiene e Beleza
+Pasta de Dente Clareadora,Higiene e Beleza
+Pasta de Dente Infantil,Higiene e Beleza
+Pente,Higiene e Beleza
+Pincel de Maquiagem,Higiene e Beleza
+Pó Compacto,Higiene e Beleza
+Protetor Diário,Higiene e Beleza
+Protetor Labial,Higiene e Beleza
+Protetor Solar,Higiene e Beleza
+Protetor Solar Infantil,Higiene e Beleza
+Sabonete,Higiene e Beleza
+Sabonete Antisséptico,Higiene e Beleza
+Sabonete em Barra para Bebê,Higiene e Beleza
+Sabonete em Pó,Higiene e Beleza
+Sabonete Esfoliante,Higiene e Beleza
+Sabonete Íntimo,Higiene e Beleza
+Sabonete Líquido,Higiene e Beleza
+Sabonete Líquido para Bebê,Higiene e Beleza
+Sabonete para Barba,Higiene e Beleza
+Sabonete para Bebê,Higiene e Beleza
+Sabonete para Pele Oleosa,Higiene e Beleza
+Sabonete para Peles Sensíveis,Higiene e Beleza
+Shampoo,Higiene e Beleza
+Shampoo Anticaspa,Higiene e Beleza
+Shampoo para Bebê,Higiene e Beleza
+Talco para Bebê,Higiene e Beleza
+Tesoura de Unha,Higiene e Beleza
+Toalha de Papel,Higiene e Beleza
+Toalha Umedecida para Bebê,Higiene e Beleza
+Tônico Facial,Higiene e Beleza
+Abóbora,Hortifruti
+Abobrinha,Hortifruti
+Aipo,Hortifruti
+Alface,Hortifruti
+Alho,Hortifruti
+Alho Francês,Hortifruti
+Alho-Poró,Hortifruti
+Aspargo,Hortifruti
+Batata,Hortifruti
+Batata-Doce,Hortifruti
+Beldroega,Hortifruti
+Berinjela,Hortifruti
+Beterraba,Hortifruti
+Brócolis,Hortifruti
+Cebola,Hortifruti
+Cebola Amarela,Hortifruti
+Cebola Branca,Hortifruti
+Cebola Roxa,Hortifruti
+Cebolinha,Hortifruti
+Cenoura,Hortifruti
+Chuchu,Hortifruti
+Coentro,Hortifruti
+Cogumelo,Hortifruti
+Couve,Hortifruti
+Couve-Flor,Hortifruti
+Ervilha,Hortifruti
+Espinafre,Hortifruti
+Gengibre,Hortifruti
+Hortelã,Hortifruti
+Inhame,Hortifruti
+Jiló,Hortifruti
+Mandioquinha,Hortifruti
+Manjericão,Hortifruti
+Maxixe,Hortifruti
+Milho,Hortifruti
+Nabo,Hortifruti
+Pepino,Hortifruti
+Pimenta,Hortifruti
+Pimentão,Hortifruti
+Quiabo,Hortifruti
+Rabanete,Hortifruti
+Repolho,Hortifruti
+Rúcula,Hortifruti
+Salsa,Hortifruti
+Salsão,Hortifruti
+Salsinha,Hortifruti
+Tomate,Hortifruti
+Vagem,Hortifruti
+Abacaxi,Hortifruti
+Acerola,Hortifruti
+Ameixa,Hortifruti
+Ameixa Seca,Hortifruti
+Amêndoa,Hortifruti
+Amora,Hortifruti
+Avelã,Hortifruti
+Banana,Hortifruti
+Cacau,Hortifruti
+Caju,Hortifruti
+Caqui,Hortifruti
+Carambola,Hortifruti
+Castanha,Hortifruti
+Coco,Hortifruti
+Cupuaçu,Hortifruti
+Damasco,Hortifruti
+Damasco Seco,Hortifruti
+Figo,Hortifruti
+Framboesa,Hortifruti
+Goiaba,Hortifruti
+Graviola,Hortifruti
+Jabuticaba,Hortifruti
+Jaca,Hortifruti
+Kiwi,Hortifruti
+Laranja,Hortifruti
+Laranja,Hortifruti
+Lichia,Hortifruti
+Limão,Hortifruti
+Maçã,Hortifruti
+Macadâmia,Hortifruti
+Mamão,Hortifruti
+Manga,Hortifruti
+Maracujá,Hortifruti
+Melancia,Hortifruti
+Melão,Hortifruti
+Morango,Hortifruti
+Nozes,Hortifruti
+Pera,Hortifruti
+Pera,Hortifruti
+Pêssego,Hortifruti
+Physalis,Hortifruti
+Pistache,Hortifruti
+Pitaya,Hortifruti
+Romã,Hortifruti
+Tâmara,Hortifruti
+Tamarindo,Hortifruti
+Tangerina,Hortifruti
+Uva,Hortifruti
+Uva Passa,Hortifruti
+Iogurte,Mercearia
+Leite,Mercearia
+Manteiga,Mercearia
+Queijo,Mercearia
+Água Sanitária,Limpeza
+Álcool 70%,Limpeza
+Álcool em Gel,Limpeza
+Amaciante,Limpeza
+Balde,Limpeza
+Detergente,Limpeza
+Detergente Líquido,Limpeza
+Esponja de Aço,Limpeza
+Inseticida,Limpeza
+Limpa Aço,Limpeza
+Limpa Acrílico,Limpeza
+Limpa Alumínio,Limpeza
+Limpa Ardósia,Limpeza
+Limpa Azulejo,Limpeza
+Limpa Banheiro,Limpeza
+Limpa Bronze,Limpeza
+Limpa Carpete,Limpeza
+Limpa Cerâmica,Limpeza
+Limpa Cobre,Limpeza
+Limpa Concreto,Limpeza
+Limpa Couro,Limpeza
+Limpa Cozinha,Limpeza
+Limpa Cromo,Limpeza
+Limpa Drywall,Limpeza
+Limpa Estanho,Limpeza
+Limpa Ferro,Limpeza
+Limpa Forno,Limpeza
+Limpa Gesso,Limpeza
+Limpa Granito,Limpeza
+Limpa Inox,Limpeza
+Limpa Latão,Limpeza
+Limpa Madeira,Limpeza
+Limpa Mármore,Limpeza
+Limpa Níquel,Limpeza
+Limpa Nylon,Limpeza
+Limpa Ouro,Limpeza
+Limpa Pedra,Limpeza
+Limpa Pisos,Limpeza
+Limpa Plástico,Limpeza
+Limpa Poliacetato,Limpeza
+Limpa Poliacrílico,Limpeza
+Limpa Poliamida,Limpeza
+Limpa Policarbonato,Limpeza
+Limpa Poliéster,Limpeza
+Limpa Poliestireno,Limpeza
+Limpa Polietileno,Limpeza
+Limpa Polipropileno,Limpeza
+Limpa Poliuretano,Limpeza
+Limpa Polivinil,Limpeza
+Limpa Porcelana,Limpeza
+Limpa Prata,Limpeza
+Limpa PVC,Limpeza
+Limpa Tecido,Limpeza
+Limpa Tijolo,Limpeza
+Limpa Vidro,Limpeza
+Limpa Vidros,Limpeza
+Lustra Móveis,Limpeza
+Pano de Chão,Limpeza
+Rodo,Limpeza
+Sabão em Barra,Limpeza
+Sabão em Pó,Limpeza
+Sabão Líquido,Limpeza
+Sabão Omo,Limpeza
+Vassoura,Limpeza
+Macarrão,Mercearia
+Açúcar,Mercearia
+Chá,Mercearia
+Farinha de Trigo,Mercearia
+Óleo de Soja,Mercearia
+Sal,Mercearia
+Bolo de Chocolate,Padaria
+Pão de Forma,Padaria
+Pão de Forma Integral,Padaria
+Pão de Queijo,Padaria
+Pão Francês,Padaria
+Coca-cola,Bebidas
+Refrigerante de Coca,Bebidas
+Refrigerante de Coca Zero,Bebidas
+Refrigerante de Guaraná,Bebidas
+Refrigerante de Guaraná Zero,Bebidas
+Refrigerante de Laranja,Bebidas
+Refrigerante de Laranja Zero,Bebidas
+Refrigerante de Limão,Bebidas
+Refrigerante de Limão Siciliano,Bebidas
+Refrigerante de Limão Siciliano Zero,Bebidas
+Refrigerante de Limão Zero,Bebidas
+Refrigerante de Maçã Verde,Bebidas
+Refrigerante de Maçã Verde Zero,Bebidas
+Refrigerante de Maracujá,Bebidas
+Refrigerante de Maracujá Zero,Bebidas
+Refrigerante de Tangerina,Bebidas
+Refrigerante de Tangerina Zero,Bebidas
+Refrigerante de Tutti-Frutti,Bebidas
+Refrigerante de Tutti-Frutti Zero,Bebidas
+Refrigerante de Uva,Bebidas
+Refrigerante de Uva Zero,Bebidas
+Suco de Abacaxi,Bebidas
+Suco de Acerola,Bebidas
+Suco de Caju,Bebidas
+Suco de Goiaba,Bebidas
+Suco de Laranja,Bebidas
+Suco de Limão,Bebidas
+Suco de Maçã,Bebidas
+Suco de Manga,Bebidas
+Suco de Maracujá,Bebidas
+Suco de Morango,Bebidas
+Suco de Pêssego,Bebidas
+Suco de Tangerina,Bebidas
+Suco de Tutti-Frutti,Bebidas
+Suco de Uva,Bebidas
+Azeite,Mercearia
+Canela,Mercearia
+Ketchup,Mercearia
+Maionese,Mercearia
+Molho de Tomate,Mercearia
+Mostarda,Mercearia
+Orégano,Mercearia
+Vinagre,Mercearia

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoadingButtonComponent">
+        <attr name="lbTitle" format="string" />
+        <attr name="lbTitleColor" format="color" />
+        <attr name="lbBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomNavigationComponent">
+        <attr name="nvTitle" format="string" />
+        <attr name="nvTitleColor" format="color" />
+        <attr name="nvShowBackButton" format="boolean" />
+        <attr name="nvShowCloseButton" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Shopping List</string>
+    <string name="app_name">Listas de Compras</string>
+    <string name="my_lists">Minhas Listas</string>
+    <string name="shopping_list_total_value">Valor Total:</string>
+    <string name="btn_conclude">Concluir</string>
+    <string name="edit_item_list">Editar item da lista</string>
+    <string name="add_itens">Adicionar Item</string>
+    <string name="new_list">Nova lista</string>
+    <string name="empty_state_title">Lista Vazia</string>
+    <string name="empty_state_description">Sua lista está vazia.</string>
+    <string name="items_not_added">Itens fora do carrinho</string>
+    <string name="items_added">Itens no carrinho</string>
+    <string name="research">Pesquisar</string>
+    <string name="build_new_list_title">Criar Lista de Compras</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add">Adicionar</string>
+    <string name="alter">Alterar</string>
+    <string name="enter_name_for_your_list">Digite um nome para a sua lista</string>
+    <string name="confirm">Confirmar</string>
+    <string name="no_registered_lists">Sem listas cadastradas</string>
 </resources>

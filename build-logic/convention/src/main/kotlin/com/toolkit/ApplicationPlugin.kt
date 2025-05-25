@@ -4,7 +4,6 @@ import com.toolkit.plugs.configureKotlinAndroid
 import com.toolkit.plugs.setupBaseLibsCompose
 import com.toolkit.plugs.setupBaseUtilsLibs
 import com.toolkit.plugs.setupBuildTypes
-import com.toolkit.plugs.setupSigningConfigs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -40,7 +39,6 @@ class ApplicationPlugin : Plugin<Project> {
                 }
             }
             setupBuildTypes()
-            setupSigningConfigs()
             setupBaseLibsCompose()
             setupBaseUtilsLibs()
         }

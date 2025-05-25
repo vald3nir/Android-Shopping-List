@@ -3,18 +3,13 @@ package com.toolkit.plugs
 import com.android.build.api.dsl.ApkSigningConfig
 import com.android.build.api.dsl.ApplicationExtension
 import org.gradle.api.Project
-import org.gradle.api.artifacts.VersionCatalog
-import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.kotlin.dsl.configure
-import org.gradle.kotlin.dsl.getByType
 import java.io.File
+import java.util.Properties
 
-val Project.libs // todo - valdenir remover referencia
-    get(): VersionCatalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
 const val debugName = "debug"
 const val releaseName = "release"
-
 
 fun Project.setupBuildTypes() {
     extensions.configure<ApplicationExtension> {
@@ -35,22 +30,30 @@ fun Project.setupBuildTypes() {
     }
 }
 
-fun Project.setupSigningConfigs() {
+fun Project.setupSigningConfigs(pathKeyStore: String, keyAlias: String, keyPassword: String, storePassword: String) {
     extensions.configure<ApplicationExtension> {
-        val storeFilePath = rootProject.file("build-logic/convention/src/main/kotlin/com/toolkit/auth/keystore.jks")
+        val storeFilePath = File(pathKeyStore)
         buildTypes.apply {
             signingConfigs {
-                getByName(debugName) { inputParam(storeFilePath) }
-                create(releaseName) { inputParam(storeFilePath) }
+                getByName(debugName) { inputParam(storeFilePath = storeFilePath, keyAlias = keyAlias, keyPassword = keyPassword, storePassword = storePassword) }
+                create(releaseName) { inputParam(storeFilePath = storeFilePath, keyAlias = keyAlias, keyPassword = keyPassword, storePassword = storePassword) }
             }
         }
     }
 }
 
+private fun ApkSigningConfig.inputParam(storeFilePath: File, keyAlias: String, keyPassword: String, storePassword: String) {
+    this.keyAlias = keyAlias
+    this.keyPassword = keyPassword
+    this.storeFile = storeFilePath
+    this.storePassword = storePassword
+}
 
-private fun ApkSigningConfig.inputParam(storeFilePath: File) {
-    keyAlias = "Auth"
-    keyPassword = "x^~_AiVk_FZqKq)g"
-    storeFile = storeFilePath
-    storePassword = "x^~_AiVk_FZqKq)g"
+fun getEnvParameter(envFilePath: String, key: String, defaultValue: String = ""): String {
+    val envFile = File(envFilePath)
+    if (!envFile.exists()) return defaultValue
+    val props = Properties().apply {
+        envFile.inputStream().use { load(it) }
+    }
+    return props.getProperty(key, defaultValue)
 }

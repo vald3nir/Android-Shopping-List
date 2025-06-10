@@ -15,7 +15,7 @@ plugins {
 }
 
 // todo replace for your .env file path
-val envFilePath = "D://Documents//GitHub//Projetos//Lista-de-compras//Backoffice-Shopping-List//shopping_list.env"
+val envFilePath = "D:\\Documents\\GitHub\\Projetos\\ShoopingListProject\\BackofficeShoppingList\\shopping_list.env"
 val pathKeyStore = getEnvParameter(envFilePath = envFilePath, key = "KEY_STORE_PATH")
 val keyAlias = getEnvParameter(envFilePath = envFilePath, key = "KEY_STORE_ALIAS")
 val keyPassword = getEnvParameter(envFilePath = envFilePath, key = "KEY_STORE_PASSWORD")

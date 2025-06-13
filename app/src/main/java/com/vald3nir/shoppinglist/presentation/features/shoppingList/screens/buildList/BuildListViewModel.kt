@@ -13,12 +13,7 @@ class BuildListViewModel @Inject constructor(private val repository: ShoppingLis
 
     fun saveShoppingList(listAlias: String?, items: MutableList<ItemShoppingListDTO>) {
         launchWithScope {
-            repository.saveShoppingList(
-                ShoppingListDTO(
-                    title = listAlias,
-                    items = items
-                )
-            )
+            repository.saveShoppingList(ShoppingListDTO(title = listAlias, items = items))
             updateViewState(BaseScreenState.Success())
         }
     }

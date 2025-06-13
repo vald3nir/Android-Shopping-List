@@ -10,11 +10,12 @@ import com.vald3nir.shoppinglist.domain.mapper.toDTO
 import com.vald3nir.shoppinglist.domain.mapper.toDTOList
 import com.vald3nir.shoppinglist.domain.mapper.toModal
 import com.vald3nir.shoppinglist.domain.mapper.toNewModal
+import com.vald3nir.shoppinglist.repository.usecases.FirebaseUseCase
+import com.vald3nir.shoppinglist.repository.usecases.importShoppingLists
 import com.vald3nir.shoppinglist.repository.usecases.insertOrUpdateShoppingList
 import com.vald3nir.shoppinglist.repository.usecases.loadItemShoppingListFlow
 import com.vald3nir.shoppinglist.repository.usecases.loadShoppingList
 import com.vald3nir.shoppinglist.repository.usecases.loadShoppingListFlow
-import com.vald3nir.shoppinglist.repository.usecases.loadShoppingLists
 import com.vald3nir.shoppinglist.repository.usecases.useFakeData
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -23,7 +24,7 @@ import javax.inject.Inject
 interface ShoppingListRepository {
     suspend fun useFakeData()
     suspend fun clearFakeData()
-
+    suspend fun importDatabase()
     suspend fun saveShoppingList(dto: ShoppingListDTO)
     suspend fun cloneShoppingList(shoppingList: ShoppingListDTO?)
 
@@ -57,11 +58,17 @@ class ShoppingListRepositoryImpl @Inject constructor(
         fakeDao.clearFakeData()
     }
 
-    override suspend fun saveShoppingList(dto: ShoppingListDTO) {
-        dao.insertOrUpdateShoppingList(dto)
+    override suspend fun importDatabase() {
+        FirebaseUseCase.importShoppingLists(dao)
     }
 
-    override fun getAll(): Flow<List<ShoppingListDTO>> = dao.loadShoppingLists()
+    override suspend fun saveShoppingList(dto: ShoppingListDTO) {
+        dao.insertOrUpdateShoppingList(dto)
+        FirebaseUseCase.exportShoppingLists(dao)
+        FirebaseUseCase.importShoppingLists(dao)
+    }
+
+    override fun getAll(): Flow<List<ShoppingListDTO>> = dao.importShoppingLists()
 
     override fun searchShoppingLists(query: String): Flow<List<ShoppingListDTO>> {
         return dao.searchShoppingLists(query).map { it.toDTOList() }

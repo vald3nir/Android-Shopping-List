@@ -5,9 +5,9 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
+import com.vald3nir.shoppinglist.db.mock.MockShoppingListModel
 import com.vald3nir.shoppinglist.db.model.entities.ItemShoppingListModal
 import com.vald3nir.shoppinglist.db.model.entities.ShoppingListModal
-import com.vald3nir.shoppinglist.db.mock.MockShoppingListModel
 
 @Dao
 interface ShoppingListFakeDao {

@@ -22,8 +22,13 @@
         </activity>
 
         <activity
+            android:name=".presentation.features.importData.ImportDataActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".presentation.features.shoppingList.ShoppingListActivity"
             android:exported="true" />
+
     </application>
 
 </manifest>

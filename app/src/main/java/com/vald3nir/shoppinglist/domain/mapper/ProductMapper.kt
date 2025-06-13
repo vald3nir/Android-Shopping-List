@@ -18,12 +18,11 @@ fun ProductModel.toDTO() = ProductDTO(
     category = category
 )
 
-
-fun List<String?>.toProductList(): List<ProductDTO> {
-    val list = mutableListOf<ProductDTO>()
+fun List<String?>.toProductsModel(): List<ProductModel> {
+    val list = mutableListOf<ProductModel>()
     this.forEach { dataJson ->
         if (!dataJson.isNullOrEmpty()) {
-            list.add(fromJsonToObject<ProductDTO>(dataJson))
+            list.add(fromJsonToObject<ProductModel>(dataJson))
         }
     }
     return list

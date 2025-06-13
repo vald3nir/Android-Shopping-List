@@ -1,10 +1,11 @@
 package com.vald3nir.shoppinglist.domain.usecases
 
-import android.app.Activity
 import com.vald3nir.shoppinglist.BuildConfig
+import com.vald3nir.shoppinglist.presentation.features.importData.startImportDataActivity
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.startShoppingListActivity
 import com.vald3nir.shoppinglist.repository.ShoppingListRepository
 import com.vald3nir.toolkit.auth.di.AuthApplicationCall
+import com.vald3nir.toolkit.helpers.baseclasses.BaseActivity
 import javax.inject.Inject
 
 class AuthApplicationCallImpl @Inject constructor(private val repository: ShoppingListRepository) : AuthApplicationCall {
@@ -19,8 +20,9 @@ class AuthApplicationCallImpl @Inject constructor(private val repository: Shoppi
         repository.clearFakeData()
     }
 
-    override fun finishAuth(currentActivity: Activity) {
-        currentActivity.startShoppingListActivity()
+    override fun finishAuth(currentActivity: BaseActivity) {
+        currentActivity.startImportDataActivity {
+            currentActivity.startShoppingListActivity()
+        }
     }
-
 }

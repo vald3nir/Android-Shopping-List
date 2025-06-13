@@ -1,12 +1,12 @@
 package com.vald3nir.toolkit.auth.presentation
 
-import android.app.Activity
 import androidx.navigation.NavController
 import com.vald3nir.toolkit.auth.presentation.navigaton.AuthScreenRoute
+import com.vald3nir.toolkit.helpers.baseclasses.BaseActivity
 import com.vald3nir.toolkit.helpers.baseclasses.BaseScreenScope
 
 internal data class AuthScope(
-    val activity: Activity,
+    val activity: BaseActivity,
     val viewModel: AuthViewModel,
     val navController: NavController
 ) : BaseScreenScope(viewModel, navController) {
@@ -48,7 +48,12 @@ internal data class AuthScope(
     }
 }
 
-internal fun enableBtnContinue(email: String, password: String, errorPasswordMessage: String?, errorEmailMessage: String?): Boolean {
+internal fun enableBtnContinue(
+    email: String,
+    password: String,
+    errorPasswordMessage: String?,
+    errorEmailMessage: String?
+): Boolean {
 //    println("enableBtnContinue-> email: $email password: $password errorPasswordMessage: $errorPasswordMessage errorEmailMessage: $errorEmailMessage")
     return email.isNotBlank() && password.isNotBlank() && errorPasswordMessage.isNullOrBlank() && errorEmailMessage.isNullOrBlank()
 }

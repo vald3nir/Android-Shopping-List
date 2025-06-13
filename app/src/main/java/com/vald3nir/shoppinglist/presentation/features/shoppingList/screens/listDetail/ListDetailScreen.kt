@@ -9,9 +9,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
+import com.vald3nir.shoppinglist.db.mock.MockShoppingListDTO
 import com.vald3nir.shoppinglist.domain.dto.ItemShoppingListDTO
 import com.vald3nir.shoppinglist.domain.dto.ShoppingListDTO
-import com.vald3nir.shoppinglist.db.mock.MockShoppingListDTO
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.components.ShoppingCartResumeComponent
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.components.dialogs.BuildItemListDialog
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.components.dialogs.EditListNameDialog

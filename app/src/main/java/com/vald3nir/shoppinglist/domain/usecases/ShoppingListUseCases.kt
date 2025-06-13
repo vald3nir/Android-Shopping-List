@@ -1,6 +1,5 @@
 package com.vald3nir.shoppinglist.domain.usecases
 
-import androidx.compose.runtime.Composable
 import com.vald3nir.shoppinglist.domain.dto.ItemShoppingListDTO
 import com.vald3nir.shoppinglist.domain.dto.ShoppingListDTO
 import com.vald3nir.toolkit.helpers.utils.formatCurrency

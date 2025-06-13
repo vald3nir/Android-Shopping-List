@@ -1,9 +1,9 @@
 package com.vald3nir.shoppinglist.repository.usecases
 
-import com.vald3nir.shoppinglist.domain.dto.ShoppingListDTO
 import com.vald3nir.shoppinglist.db.dao.ShoppingListDao
 import com.vald3nir.shoppinglist.db.model.entities.ItemShoppingListModal
 import com.vald3nir.shoppinglist.db.model.entities.ShoppingListModal
+import com.vald3nir.shoppinglist.domain.dto.ShoppingListDTO
 import com.vald3nir.toolkit.helpers.utils.orZero
 
 suspend fun ShoppingListDao.insertOrUpdateShoppingList(dto: ShoppingListDTO) {

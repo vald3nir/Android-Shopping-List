@@ -14,8 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.vald3nir.shoppinglist.R
-import com.vald3nir.shoppinglist.domain.dto.ItemShoppingListDTO
 import com.vald3nir.shoppinglist.db.mock.MockShoppingListDTO
+import com.vald3nir.shoppinglist.domain.dto.ItemShoppingListDTO
 import com.vald3nir.shoppinglist.domain.usecases.titleListFormated
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.components.dialogs.BuildItemListDialog
 import com.vald3nir.toolkit.compose.components.base.DefaultSpaceHeight

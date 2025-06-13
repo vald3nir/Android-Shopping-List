@@ -4,12 +4,12 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
-import com.vald3nir.shoppinglist.presentation.BaseActivity
+import com.vald3nir.shoppinglist.presentation.CustomActivity
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.navigation.ShoppingListNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-internal class ShoppingListActivity : BaseActivity() {
+internal class ShoppingListActivity : CustomActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

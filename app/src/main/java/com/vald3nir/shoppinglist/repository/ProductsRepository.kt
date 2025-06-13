@@ -11,10 +11,10 @@ import com.vald3nir.tolkit.networking.rest.RestClientExecutor
 import javax.inject.Inject
 
 interface ProductsRepository {
+    suspend fun importDatabase()
     suspend fun hasSavedProducts(): Boolean
     suspend fun insertProducts(products: List<ProductDTO>)
     suspend fun insertProductsFromDataset(context: Context)
-    fun loadProductsFromFirebase(onSuccess: (List<ProductDTO>) -> Unit, onError: ((Exception?) -> Unit)?)
     suspend fun findProductFromBarcode(barcode: String): ProductFromBarcodeDTO?
 }
 
@@ -22,6 +22,10 @@ class ProductsRepositoryImpl @Inject constructor(
     private val productsDao: ProductsDao,
     private val publicServicesAPI: PublicServicesAPI,
 ) : ProductsRepository, RestClientExecutor() {
+
+    override suspend fun importDatabase() {
+        FirebaseUseCase.importProducts(productsDao)
+    }
 
     override suspend fun hasSavedProducts() = !productsDao.isEmpty()
 
@@ -31,10 +35,6 @@ class ProductsRepositoryImpl @Inject constructor(
 
     override suspend fun insertProducts(products: List<ProductDTO>) {
         productsDao.clearAndInsert(products.toModel())
-    }
-
-    override fun loadProductsFromFirebase(onSuccess: (List<ProductDTO>) -> Unit, onError: ((Exception?) -> Unit)?) {
-        FirebaseUseCase.loadProductsFromFirebase(onSuccess, onError)
     }
 
     override suspend fun findProductFromBarcode(barcode: String) = execute {

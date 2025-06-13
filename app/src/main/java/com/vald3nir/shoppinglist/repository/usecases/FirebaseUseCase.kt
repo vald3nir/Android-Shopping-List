@@ -1,35 +1,35 @@
 package com.vald3nir.shoppinglist.repository.usecases
 
+
 import com.vald3nir.android.firebase.auth.FirebaseAuthenticator
 import com.vald3nir.android.firebase.data.FirebaseDB
+import com.vald3nir.android.firebase.utils.parseEmailToKey
 import com.vald3nir.shoppinglist.BuildConfig
-import com.vald3nir.shoppinglist.db.model.entities.ShoppingListModal
-import com.vald3nir.shoppinglist.domain.dto.ProductDTO
-import com.vald3nir.shoppinglist.domain.mapper.toProductList
+import com.vald3nir.shoppinglist.db.dao.ProductsDao
+import com.vald3nir.shoppinglist.db.dao.ShoppingListDao
+import com.vald3nir.shoppinglist.domain.mapper.toProductsModel
+import com.vald3nir.shoppinglist.domain.mapper.toShoppingListWithItemsModel
 
 object FirebaseUseCase {
 
-    fun saveShoppingLists(lists: List<ShoppingListModal>) {
-        val user = FirebaseAuthenticator.getFirebaseUser()
-        if (user != null) {
-            val key = "debug/shopping_lists/${user.email}"
+    private fun getKey() = FirebaseAuthenticator.getFirebaseUser()?.email?.parseEmailToKey()
 
+    suspend fun importShoppingLists(dao: ShoppingListDao) {
+        getKey()?.let { key ->
+            val response = FirebaseDB.readList(path = "/${BuildConfig.FLAVOR}/clients/$key/shopping_lists").toShoppingListWithItemsModel()
+            dao.cleanAndInsert(response)
         }
     }
 
-    fun loadShoppingLists() {
-
+    suspend fun exportShoppingLists(dao: ShoppingListDao) {
+        getKey()?.let { key ->
+            val shoppingLists = dao.loadAllListsWithItems()
+            FirebaseDB.insertOrUpdate(path = "/${BuildConfig.FLAVOR}/clients/$key/shopping_lists", data = shoppingLists)
+        }
     }
 
-    fun saveProducts() {
-
-    }
-
-    fun loadProductsFromFirebase(onSuccess: (List<ProductDTO>) -> Unit, onError: ((Exception?) -> Unit)?) {
-        FirebaseDB.readList(
-            path = "/${BuildConfig.FLAVOR}/products",
-            onSuccess = { onSuccess(it.toProductList()) },
-            onError = onError
-        )
+    suspend fun importProducts(dao: ProductsDao) {
+        val response = FirebaseDB.readList(path = "/${BuildConfig.FLAVOR}/products").toProductsModel()
+        dao.clearAndInsert(response)
     }
 }

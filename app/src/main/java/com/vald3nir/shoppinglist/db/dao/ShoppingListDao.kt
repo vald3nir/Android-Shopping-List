@@ -26,6 +26,16 @@ interface ShoppingListDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(entity: ItemShoppingListModal): Long
 
+    @Transaction
+    suspend fun cleanAndInsert(models: List<ShoppingListWithItems>) {
+        deleteAllLists()
+        deleteAllItems()
+        models.forEach {
+            insert(it.shoppingList)
+            insert(it.items)
+        }
+    }
+
     // ========================================================================================
     // UPDATE FUNCTIONS
     // ========================================================================================
@@ -46,6 +56,11 @@ interface ShoppingListDao {
     @Query("DELETE FROM ${ItemShoppingListModal.TABLE_NAME} WHERE id = :itemId")
     suspend fun deleteItemById(itemId: Long)
 
+    @Query("DELETE FROM ${ItemShoppingListModal.TABLE_NAME}")
+    suspend fun deleteAllItems()
+
+    @Query("DELETE FROM ${ShoppingListModal.TABLE_NAME}")
+    suspend fun deleteAllLists()
 
     // ========================================================================================
     // QUERY FUNCTIONS
@@ -61,6 +76,10 @@ interface ShoppingListDao {
     @Transaction
     @Query("SELECT * FROM ${ShoppingListModal.TABLE_NAME} WHERE id = :shoppingListId")
     suspend fun selectShoppingList(shoppingListId: Long?): ShoppingListWithItems?
+
+    @Transaction
+    @Query("SELECT * FROM ${ShoppingListModal.TABLE_NAME}")
+    suspend fun loadAllListsWithItems(): List<ShoppingListWithItems?>
 
     @Query("SELECT * FROM ${ShoppingListModal.TABLE_NAME} ORDER BY lastUpdated DESC")
     fun selectAllShoppingLists(): Flow<List<ShoppingListModal>>

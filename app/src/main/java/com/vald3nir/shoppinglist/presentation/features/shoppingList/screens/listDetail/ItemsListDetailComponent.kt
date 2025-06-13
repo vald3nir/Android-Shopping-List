@@ -1,8 +1,6 @@
 package com.vald3nir.shoppinglist.presentation.features.shoppingList.screens.listDetail
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -12,22 +10,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.vald3nir.shoppinglist.R
+import com.vald3nir.shoppinglist.db.mock.MockShoppingListDTO
 import com.vald3nir.shoppinglist.domain.dto.ItemShoppingListDTO
 import com.vald3nir.shoppinglist.domain.dto.ShoppingListDTO
-import com.vald3nir.shoppinglist.domain.enums.ProductCategoryEnum
-import com.vald3nir.shoppinglist.db.mock.MockShoppingListDTO
 import com.vald3nir.shoppinglist.domain.usecases.splitItems
 import com.vald3nir.shoppinglist.presentation.features.shoppingList.components.itemList.ItemShoppingCartComponent
-import com.vald3nir.toolkit.compose.components.base.DefaultSpaceHeight
 import com.vald3nir.toolkit.compose.components.base.HalfSpaceHeight
 import com.vald3nir.toolkit.compose.components.base.ToolkitCard
-import com.vald3nir.toolkit.compose.components.base.ToolkitIcon
-import com.vald3nir.toolkit.compose.components.base.ToolkitIcons
-import com.vald3nir.toolkit.compose.components.base.ToolkitRow
 import com.vald3nir.toolkit.compose.components.base.ToolkitText
 import com.vald3nir.toolkit.compose.components.base.halfSpace
 import com.vald3nir.toolkit.compose.designSystem.DefaultThemeColors

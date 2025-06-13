@@ -3,14 +3,17 @@ package com.vald3nir.shoppinglist
 import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
-import com.vald3nir.shoppinglist.repository.db.AppDatabase
-import com.vald3nir.shoppinglist.repository.db.dao.ShoppingListDao
-import com.vald3nir.shoppinglist.repository.db.model.ItemShoppingListModal
-import com.vald3nir.shoppinglist.repository.db.model.entities.ShoppingListModal
+import com.vald3nir.shoppinglist.db.AppDatabase
+import com.vald3nir.shoppinglist.db.dao.ShoppingListDao
+import com.vald3nir.shoppinglist.db.model.entities.ItemShoppingListModal
+import com.vald3nir.shoppinglist.db.model.entities.ShoppingListModal
 import com.vald3nir.toolkit.helpers.utils.getCurrentDate
 import kotlinx.coroutines.runBlocking
 import org.junit.After
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 
@@ -23,12 +26,13 @@ class ShoppingListDaoTest {
     @Before
     fun setup() {
         val context = ApplicationProvider.getApplicationContext<Context>()
-        database = Room.inMemoryDatabaseBuilder(context, AppDatabase::class.java)
-            .allowMainThreadQueries().build() // Permite queries na thread principal para fins de teste
+        database = Room
+            .inMemoryDatabaseBuilder(context, AppDatabase::class.java)
+            .allowMainThreadQueries() // Permite queries na thread principal para fins de teste
+            .build()
         shoppingListDao = database.getShoppingListDao()
     }
 
-    // Limpa os dados do banco após cada teste
     @After
     fun teardown() {
         database.close()

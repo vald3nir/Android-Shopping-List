@@ -8,8 +8,10 @@ import androidx.core.view.WindowInsetsControllerCompat
 import com.vald3nir.toolkit.compose.designSystem.preference.isSystemDarkMode
 
 fun Activity.updateStatusBarColor() {
-    val statusBarColor: Int = if (isSystemDarkMode()) Color.BLACK else Color.WHITE
+    updateStatusBarColor(if (isSystemDarkMode()) Color.BLACK else Color.WHITE)
+}
 
+fun Activity.updateStatusBarColor(statusBarColor: Int) {
     // WindowCompat.setDecorFitsSystemWindows(window, false) // BUG: for some devices it creates extra spacing, for others it removes it.
     WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
     WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightNavigationBars = false

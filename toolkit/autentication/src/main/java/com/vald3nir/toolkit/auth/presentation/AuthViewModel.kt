@@ -3,15 +3,17 @@ package com.vald3nir.toolkit.auth.presentation
 import android.app.Activity
 import com.vald3nir.android.firebase.auth.FirebaseAuthenticator
 import com.vald3nir.toolkit.auth.di.AuthApplicationCall
+import com.vald3nir.toolkit.helpers.baseclasses.BaseActivity
 import com.vald3nir.toolkit.helpers.baseclasses.BaseScreenState
 import com.vald3nir.toolkit.helpers.baseclasses.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-internal class AuthViewModel @Inject constructor(private val applicationCall: AuthApplicationCall) : BaseViewModel() {
+internal class AuthViewModel @Inject constructor(private val applicationCall: AuthApplicationCall) :
+    BaseViewModel() {
 
-    fun finishAuthentication(activity: Activity) {
+    fun finishAuthentication(activity: BaseActivity) {
         applicationCall.finishAuth(activity)
     }
 

@@ -1,7 +1,7 @@
 package com.vald3nir.shoppinglist.db.mock
 
-import com.vald3nir.shoppinglist.domain.enums.ProductCategoryEnum
 import com.vald3nir.shoppinglist.db.model.entities.ProductModel
+import com.vald3nir.shoppinglist.domain.enums.ProductCategoryEnum
 
 object MockProductModel {
 

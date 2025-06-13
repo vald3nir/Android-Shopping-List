@@ -3,13 +3,13 @@ package com.vald3nir.toolkit.auth.presentation
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.vald3nir.toolkit.auth.presentation.navigaton.AuthNavHost
+import com.vald3nir.toolkit.helpers.baseclasses.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class AuthActivity : ComponentActivity() {
+class AuthActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

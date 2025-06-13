@@ -1,6 +1,5 @@
 package com.vald3nir.toolkit.auth.presentation.navigaton
 
-import android.app.Activity
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
@@ -11,9 +10,10 @@ import com.vald3nir.toolkit.auth.presentation.AuthViewModel
 import com.vald3nir.toolkit.auth.presentation.screens.HomeAuthScreen
 import com.vald3nir.toolkit.auth.presentation.screens.LoginScreen
 import com.vald3nir.toolkit.auth.presentation.screens.SignUpScreen
+import com.vald3nir.toolkit.helpers.baseclasses.BaseActivity
 
 @Composable
-fun Activity.AuthNavHost() {
+fun BaseActivity.AuthNavHost() {
     val navController = rememberNavController()
 
     NavHost(navController, startDestination = AuthScreenRoute.HomeAuth) {

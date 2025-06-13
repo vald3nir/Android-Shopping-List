@@ -1,14 +1,14 @@
 package com.vald3nir.shoppinglist.repository.usecases
 
+import com.vald3nir.shoppinglist.db.dao.ShoppingListDao
 import com.vald3nir.shoppinglist.domain.dto.ItemShoppingListDTO
 import com.vald3nir.shoppinglist.domain.dto.ShoppingListDTO
 import com.vald3nir.shoppinglist.domain.mapper.toDTO
 import com.vald3nir.shoppinglist.domain.mapper.toShoppingListDTO
-import com.vald3nir.shoppinglist.db.dao.ShoppingListDao
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-fun ShoppingListDao.loadShoppingLists(): Flow<List<ShoppingListDTO>> {
+fun ShoppingListDao.importShoppingLists(): Flow<List<ShoppingListDTO>> {
     return selectAllShoppingLists().map { it.map { entity -> entity.toShoppingListDTO() } }
 }
 
